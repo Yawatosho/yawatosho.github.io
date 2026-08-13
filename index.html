@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="YAWATOSHO GAMES — Library games & playful experiments. やわらか図書館学でつくっている、図書館を題材にしたゲームや遊び。">
+  <meta name="theme-color" content="#f4f2ec">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="YAWATOSHO GAMES">
+  <meta property="og:title" content="YAWATOSHO GAMES">
+  <meta property="og:description" content="Library games & playful experiments.">
+  <meta property="og:url" content="https://yawatosho.github.io/games/">
+  <meta property="og:image" content="https://yawatosho.github.io/games/assets/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YAWATOSHO GAMES">
+  <meta name="twitter:description" content="Library games & playful experiments.">
+  <meta name="twitter:image" content="https://yawatosho.github.io/games/assets/ogp.png">
+  <title>YAWATOSHO GAMES — Library games & playful experiments</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Google Analytics: existing YAWATOSHO Games property -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6NS8CCNWN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J6NS8CCNWN');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#games">ゲーム一覧へ</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="YAWATOSHO GAMES トップへ">
+      <span>YAWATOSHO</span><strong>GAMES</strong>
+    </a>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="https://yawatosho.hateblo.jp/" target="_blank" rel="noopener">Blog ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-kicker">Independent library game label / since 2025</div>
+      <h1 id="hero-title"><span>YAWATOSHO</span><strong>GAMES</strong></h1>
+      <p class="hero-subtitle">Library games &amp; playful experiments</p>
+      <div class="hero-bottom">
+        <p class="hero-description">図書館を題材にしたゲームや、ちょっとした遊びをつくっています。</p>
+        <button class="text-button" id="surpriseMe" type="button">Surprise me <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section class="featured-section" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <p class="eyebrow">Featured</p>
+        <h2 id="featured-title">New releases</h2>
+      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="games-section" id="games" aria-labelledby="games-title">
+      <div class="section-heading games-heading">
+        <div>
+          <p class="eyebrow">Collection</p>
+          <h2 id="games-title">All games <span id="gameCount"></span></h2>
+        </div>
+        <div class="filters" id="filters" aria-label="ゲームを絞り込む"></div>
+      </div>
+
+      <div class="games-grid" id="gamesGrid"></div>
+      <p class="empty-message" id="emptyMessage" hidden>このカテゴリーのゲームはまだありません。</p>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">About</p>
+      <div class="about-layout">
+        <h2 id="about-title">Play the library.</h2>
+        <div class="about-copy">
+          <p>分類、配架、レファレンス、図書館運営。図書館にある仕事や仕組みを、ゲームとして少し違う角度から眺めています。</p>
+          <p>YAWATOSHO GAMES は、ブログ「やわらか図書館学」のゲームプロジェクトです。</p>
+          <a class="inline-link" href="https://yawatosho.hateblo.jp/" target="_blank" rel="noopener">やわらか図書館学を見る <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">YAWATOSHO GAMES</div>
+    <div class="footer-meta">Library games &amp; playful experiments</div>
+    <div class="footer-project">A project of <a href="https://yawatosho.hateblo.jp/" target="_blank" rel="noopener">やわらか図書館学</a></div>
+  </footer>
+
+  <template id="featuredTemplate">
+    <article class="featured-card">
+      <a class="featured-link" href="#" target="_blank" rel="noopener">
+        <div class="featured-visual">
+          <img class="featured-image" alt="" loading="eager">
+          <div class="featured-fallback" aria-hidden="true"></div>
+          <span class="featured-index"></span>
+          <span class="new-badge">NEW</span>
+        </div>
+        <div class="featured-info">
+          <div>
+            <p class="featured-meta"></p>
+            <h3 class="featured-title"></h3>
+          </div>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+    </article>
+  </template>
+
+  <template id="gameTemplate">
+    <article class="game-card">
+      <a class="game-link" href="#" target="_blank" rel="noopener">
+        <div class="game-visual">
+          <img class="game-image" alt="" loading="lazy">
+          <div class="game-fallback" aria-hidden="true">
+            <span class="fallback-no"></span>
+            <strong class="fallback-title"></strong>
+          </div>
+          <span class="archive-badge" hidden>ARCHIVE</span>
+        </div>
+        <div class="game-info">
+          <p class="game-meta"></p>
+          <h3 class="game-title"></h3>
+          <p class="game-description"></p>
+          <div class="game-action"><span>Play game</span><span aria-hidden="true">↗</span></div>
+        </div>
+      </a>
+    </article>
+  </template>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>

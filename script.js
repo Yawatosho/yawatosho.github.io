@@ -223,13 +223,11 @@ function renderFeatured() {
     const link = fragment.querySelector(".featured-link");
     const visual = fragment.querySelector(".featured-visual");
     const image = fragment.querySelector(".featured-image");
-    const fallback = fragment.querySelector(".featured-fallback");
 
     link.href = game.url;
     link.setAttribute("aria-label", `${game.title} を遊ぶ`);
     link.addEventListener("click", () => trackGameOpen(game, "featured"));
 
-    fallback.textContent = game.shortTitle;
     fragment.querySelector(".featured-index").textContent = `0${index + 1}`;
     fragment.querySelector(".featured-meta").textContent = `${game.year} / ${game.category}`;
     fragment.querySelector(".featured-title").textContent = game.title;
@@ -266,20 +264,17 @@ function renderGames() {
   gameCount.textContent = `(${visible.length})`;
   emptyMessage.hidden = visible.length !== 0;
 
-  visible.forEach((game, index) => {
+  visible.forEach((game) => {
     const fragment = gameTemplate.content.cloneNode(true);
     const link = fragment.querySelector(".game-link");
     const visual = fragment.querySelector(".game-visual");
     const image = fragment.querySelector(".game-image");
-    const fallbackTitle = fragment.querySelector(".fallback-title");
     const archiveBadge = fragment.querySelector(".archive-badge");
 
     link.href = game.url;
     link.setAttribute("aria-label", `${game.title} を遊ぶ`);
     link.addEventListener("click", () => trackGameOpen(game, "collection"));
 
-    fallbackTitle.textContent = game.shortTitle;
-    fragment.querySelector(".fallback-no").textContent = String(index + 1).padStart(2, "0");
     fragment.querySelector(".game-meta").textContent = `${game.year} / ${game.category}`;
     fragment.querySelector(".game-title").textContent = game.title;
     fragment.querySelector(".game-description").textContent = game.description;

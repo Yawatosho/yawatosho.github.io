@@ -1,29 +1,8 @@
-<!--
-  各ゲームのタイトル画面・メニュー・フッターなどに置くためのサンプルです。
-  既存ゲームのデザインに合わせて class 名やCSSは変更してください。
--->
+<!-- 共通リンク例：各ゲームから YAWATOSHO GAMES へ戻る -->
 <a
-  class="yawatosho-games-link"
   href="https://yawatosho.github.io/games/"
-  target="_self"
-  aria-label="YAWATOSHO GAMESで他のゲームを見る"
+  style="display:inline-flex;align-items:center;gap:.5em;padding:.55em .9em;border:1px solid rgba(0,0,0,.18);border-radius:999px;text-decoration:none;color:inherit;font:600 12px/1.2 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.03em;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);"
 >
   <span>YAWATOSHO GAMES</span>
-  <small>Other games ↗</small>
+  <span aria-hidden="true">↗</span>
 </a>
-
-<style>
-.yawatosho-games-link {
-  display: inline-flex;
-  align-items: baseline;
-  gap: .65em;
-  color: inherit;
-  text-decoration: none;
-  font-family: system-ui, sans-serif;
-  font-size: 12px;
-  opacity: .72;
-}
-.yawatosho-games-link:hover { opacity: 1; }
-.yawatosho-games-link span { font-weight: 700; letter-spacing: .02em; }
-.yawatosho-games-link small { font-size: 10px; }
-</style>

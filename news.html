@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="YAWATOSHO GAMES の最新情報。">
+  <meta name="theme-color" content="#f4f2ec">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="YAWATOSHO GAMES">
+  <meta property="og:title" content="News — YAWATOSHO GAMES">
+  <meta property="og:description" content="YAWATOSHO GAMES の最新情報。">
+  <meta property="og:url" content="https://yawatosho.github.io/news.html">
+  <meta property="og:image" content="https://yawatosho.github.io/assets/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="News — YAWATOSHO GAMES">
+  <meta name="twitter:description" content="YAWATOSHO GAMES の最新情報。">
+  <meta name="twitter:image" content="https://yawatosho.github.io/assets/ogp.png">
+  <title>News — YAWATOSHO GAMES</title>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://yawatosho.github.io/news.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6NS8CCNWN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J6NS8CCNWN');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#news-list">お知らせ一覧へ</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="./index.html" aria-label="YAWATOSHO GAMES トップへ">
+      <span>YAWATOSHO</span><strong>GAMES</strong>
+    </a>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="./index.html#games">Games</a>
+      <a href="./index.html#news" aria-current="page">News</a>
+      <a href="./index.html#about">About</a>
+      <a href="https://yawatosho.hateblo.jp/" target="_blank" rel="noopener">Blog ↗</a>
+    </nav>
+  </header>
+
+  <main class="news-page-main">
+    <section class="news-page-hero" aria-labelledby="news-page-title">
+      <p class="eyebrow">Updates</p>
+      <h1 id="news-page-title">News</h1>
+      <p class="news-page-intro">YAWATOSHO GAMES のゲームや機能に関する最新情報。</p>
+    </section>
+
+    <section class="news-archive-section" id="news-list" aria-label="お知らせ一覧">
+      <div class="news-grid" id="newsList"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer news-page-footer">
+    <div class="footer-brand">YAWATOSHO GAMES</div>
+    <div class="footer-meta">Library games &amp; playful experiments</div>
+    <div class="footer-project">A project of <a href="https://yawatosho.hateblo.jp/" target="_blank" rel="noopener">やわらか図書館学</a></div>
+  </footer>
+
+  <dialog class="news-modal" id="newsModal" aria-labelledby="newsModalTitle">
+    <div class="news-modal-shell">
+      <button class="news-modal-close" type="button" aria-label="お知らせの詳細を閉じる">
+        Close <span aria-hidden="true">×</span>
+      </button>
+      <div class="news-modal-layout">
+        <div class="news-modal-visual">
+          <img class="news-modal-image" alt="">
+        </div>
+        <div class="news-modal-content">
+          <p class="eyebrow">News</p>
+          <time class="news-modal-date"></time>
+          <h2 class="news-modal-title" id="newsModalTitle"></h2>
+          <p class="news-modal-detail"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./news-data.js" defer></script>
+  <script src="./news.js" defer></script>
+</body>
+</html>

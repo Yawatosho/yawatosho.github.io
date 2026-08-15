@@ -49,6 +49,7 @@
     </a>
     <nav class="site-nav" aria-label="メインナビゲーション">
       <a href="#games">Games</a>
+      <a href="#news">News</a>
       <a href="#about">About</a>
       <a href="https://yawatosho.hateblo.jp/" target="_blank" rel="noopener">Blog ↗</a>
     </nav>
@@ -71,6 +72,19 @@
         <h2 id="featured-title">New releases</h2>
       </div>
       <div class="featured-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="news-section" id="news" aria-labelledby="news-title">
+      <div class="section-heading news-heading">
+        <div>
+          <p class="eyebrow">Updates</p>
+          <h2 id="news-title">News</h2>
+        </div>
+        <a class="news-archive-link" id="newsArchiveLink" href="./news.html" hidden>
+          View all news <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="news-grid" id="newsList" data-limit="3"></div>
     </section>
 
     <section class="games-section" id="games" aria-labelledby="games-title">
@@ -143,6 +157,27 @@
     </article>
   </template>
 
+  <dialog class="news-modal" id="newsModal" aria-labelledby="newsModalTitle">
+    <div class="news-modal-shell">
+      <button class="news-modal-close" type="button" aria-label="お知らせの詳細を閉じる">
+        Close <span aria-hidden="true">×</span>
+      </button>
+      <div class="news-modal-layout">
+        <div class="news-modal-visual">
+          <img class="news-modal-image" alt="">
+        </div>
+        <div class="news-modal-content">
+          <p class="eyebrow">News</p>
+          <time class="news-modal-date"></time>
+          <h2 class="news-modal-title" id="newsModalTitle"></h2>
+          <p class="news-modal-detail"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./news-data.js" defer></script>
+  <script src="./news.js" defer></script>
   <script src="./script.js" defer></script>
 </body>
 </html>

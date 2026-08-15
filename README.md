@@ -1,24 +1,15 @@
 # YAWATOSHO GAMES
 
-更新版です。
+Library games & playful experiments.
 
-## 今回の修正点
+図書館を題材にしたゲームや、ちょっとした遊びを公開しています。
 
-- `New releases` に加えて `All games` でも、すべてのカードに画像が表示されるようにしました。
-- OGP画像があるゲームはその画像を使用しています。
-- Archive の旧作は、従来どおり黒いカードで表示します。
-- `All games` のカード上には文字を載せないようにし、画像だけが見える形にしました。
-- ヒーロー上部の小さな文字を `PLAYING WITH LIBRARIES` に変更しました。
-- `All games` の画像比率も OGP に合わせて `1200 / 630` にしています。
+分類、配架、レファレンス、図書館運営など、図書館の仕事や仕組みをゲームとして少し違う角度から眺めるプロジェクトです。
 
-## 主なファイル
+## Website
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets/*.svg`
-- `assets/ogp.png`
+[YAWATOSHO GAMES](https://yawatosho.github.io/)
 
-## 公開方法
+## Project
 
-GitHub Pages の公開先リポジトリに、このフォルダ内のファイル一式をそのまま配置してください。
+A project of [やわらか図書館学](https://yawatosho.hateblo.jp/)

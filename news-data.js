@@ -6,6 +6,7 @@ window.NEWS_ITEMS = [
     date: "2026-08-15",
     title: "「NDC KARUTA HEROES」にアートワーク機能を追加しました",
     detail: "「NDC KARUTA HEROES」の「STORY MODE」クリア時にアートワークを獲得できるコレクション機能を追加しました。アートワークはランダムで1枚解放されます。解放されたアートワークは、ギャラリーからいつでも確認可能です。",
+    url: "https://yawatosho.github.io/karuta_heroes/",
     image: "./assets/news/artwork04.webp",
     imageAlt: "NDC KARUTA HEROESのアートワーク"
   }

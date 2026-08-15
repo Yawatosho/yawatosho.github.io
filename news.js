@@ -28,6 +28,7 @@ function openNewsModal(item, trigger) {
   const date = newsModal.querySelector(".news-modal-date");
   const title = newsModal.querySelector(".news-modal-title");
   const detail = newsModal.querySelector(".news-modal-detail");
+  const gameLink = newsModal.querySelector(".news-modal-game-link");
 
   visual.classList.remove("is-fallback");
   image.src = item.image;
@@ -36,6 +37,14 @@ function openNewsModal(item, trigger) {
   date.textContent = formatNewsDate(item.date);
   title.textContent = item.title;
   detail.textContent = item.detail;
+  gameLink.hidden = !item.url;
+  if (item.url) {
+    gameLink.href = item.url;
+    gameLink.setAttribute("aria-label", `${item.title} のゲームを遊ぶ（新しいタブで開きます）`);
+  } else {
+    gameLink.removeAttribute("href");
+    gameLink.removeAttribute("aria-label");
+  }
   newsModalTrigger = trigger;
   document.body.classList.add("is-modal-open");
   newsModal.showModal();

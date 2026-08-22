@@ -80,7 +80,7 @@ const games = [
     shortTitle: "STUDY NDC",
     description: "司書さんと一緒に日本十進分類を覚える、クイズ＆トレーニングゲーム。",
     url: "https://yawatosho.github.io/study/",
-    image: "https://yawatosho.github.io/study/ogp.png",
+    image: "https://yawatosho.github.io/study/images/ogp.png",
     category: "NDC / Quiz",
     filter: "ndc",
     year: "2026",

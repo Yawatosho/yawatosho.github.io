@@ -2,6 +2,15 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
+    id: "20260822-reference-interview",
+    date: "2026-08-22",
+    title: "「THE REFERENCE INTERVIEW GAME」に後日談とケースEX4,5を追加しました",
+    detail: "「THE REFERENCE INTERVIEW GAME｜ほんとの質問」に後日談とケースE4,5を追加しました。後日談は、各ケースを100点にすることでそれぞれ開放され、開放後はいつでも確認できます。ケースEX4,5はいつもとはちょっと違った仕掛けの相談です。",
+    url: "https://yawatosho.github.io/reference/",
+    image: "./assets/news/afterstory.png",
+    imageAlt: "「THE REFERENCE INTERVIEW GAME」後日談"
+  },
+  {
     id: "20260816-reference-interview",
     date: "2026-08-16",
     title: "「THE REFERENCE INTERVIEW GAME」にエンディングとケースEX2,3を追加しました",

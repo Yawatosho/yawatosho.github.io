@@ -2,6 +2,15 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
+    id: "20260823-NDC-Karuta",
+    date: "2026-08-23",
+    title: "「スーパー日本十進分類カルタ」がキーボード操作に対応しました",
+    detail: "「スーパー日本十進分類カルタ」がPCでのプレイ時、キーボードで操作できるようになりました。理論上はキーボード操作の方が速いはずですので、ぜひハイスコアに挑戦してください！",
+    url: "https://yawatosho.github.io/karuta2/",
+    image: "./assets/news/karuta_20260823.png",
+    imageAlt: "「スーパー日本十進分類カルタ」キーボード操作"
+  },
+  {
     id: "20260822-reference-interview",
     date: "2026-08-22",
     title: "「THE REFERENCE INTERVIEW GAME」に後日談とケースEX4,5を追加しました",

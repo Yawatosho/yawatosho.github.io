@@ -2,6 +2,15 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
+    id: "20260827-Karuta-Heroes",
+    date: "2026-08-27",
+    title: "「NDC Karuta Heroes」のアートワークを追加しました",
+    detail: "「NDC Karuta Heroes」のストーリークリア時にランダムで解放されるアートワークを5枚追加しました",
+    url: "https://yawatosho.github.io/karuta_heroes/",
+    image: "./assets/news/artwork23.webp",
+    imageAlt: "「NDC Karuta Heroes」アートワーク"
+  },
+  {
     id: "20260823-NDC-Karuta",
     date: "2026-08-23",
     title: "「スーパー日本十進分類カルタ」がキーボード操作に対応しました",

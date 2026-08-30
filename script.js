@@ -1,5 +1,17 @@
 const games = [
   {
+	id: "librarian-type",
+    title: "あなたはどの図書館員タイプ？",
+    shortTitle: "あなたはどの図書館員タイプ？",
+    description: "12の質問から、あなたの図書館員タイプを勝手に分類する診断ゲームです。",
+    url: "https://yawatosho.github.io/librarian-type/",
+    image: "https://yawatosho.github.io/librarian-type/assets/ogp.png",
+    category: "Diagnosis / Librarian",
+    year: "2026",
+    featured: true,
+    archive: false
+  },
+  {
     id: "reference",
     title: "THE REFERENCE INTERVIEW GAME｜ほんとの質問",
     shortTitle: "THE REFERENCE INTERVIEW GAME",
@@ -35,7 +47,6 @@ const games = [
     category: "University Library / Simulation",
     filter: "management",
     year: "2026",
-    featured: true,
     archive: false
   },
   {

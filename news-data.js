@@ -2,6 +2,15 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
+    id: "20260830-Librarian-Type",
+    date: "2026-08-30",
+    title: "「あなたはどの図書館員タイプ？」をリリースしました",
+    detail: "図書館員のタイプ診断「あなたはどの図書館員タイプ？」をリリースしました。12の質問に答えると、16種類の「図書館員タイプ」のどれかに分類されます。2〜3分くらいで終わる簡単な診断ゲームですので、よかったら遊んでみてください。",
+    url: "https://yawatosho.github.io/librarian-type/",
+    image: "./assets/news/librarian-type_ogp.png",
+    imageAlt: "「あなたはどの図書館員タイプ？」ロゴ"
+  },
+{
     id: "20260827-Karuta-Heroes",
     date: "2026-08-27",
     title: "「NDC Karuta Heroes」のアートワークを追加しました",

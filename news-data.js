@@ -2,6 +2,15 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
+    id: "20260831-Librarian-Type",
+    date: "2026-08-31",
+    title: "「あなたはどの図書館員タイプ？」にタイプ一覧ページを追加しました",
+    detail: "図書館員のタイプ診断「あなたはどの図書館員タイプ？」に16種類の図書館員タイプの一覧ページを追加しました。タイトル画面または診断結果画面からアクセスできます。「司書さんと探偵さん」バージョンのカードも閲覧できます。ぜひ気になるタイプをのぞいてみてください！",
+    url: "https://yawatosho.github.io/librarian-type/",
+    image: "./assets/news/call-number_lib.webp",
+    imageAlt: "「あなたはどの図書館員タイプ？」タイプ一覧リリース"
+  },
+  {
     id: "20260830-Librarian-Type",
     date: "2026-08-30",
     title: "「あなたはどの図書館員タイプ？」をリリースしました",

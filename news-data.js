@@ -2,6 +2,15 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
+    id: "20260908-NDC-Study",
+    date: "2026-09-08",
+    title: "「司書さんと覚える日本十進分類」に、NDC講座を追加しました！",
+    detail: "「司書さんと覚える日本十進分類」に、NDC講座を追加しました！「NDCってなに？」というところから、司書さんと一緒に少しずつ日本十進分類を覚えていけます。クイズの前のおさらいにも、NDCを勉強してみたい方にもぜひ。",
+    url: "https://yawatosho.github.io/study/",
+    image: "./assets/news/study-guide.webp",
+    imageAlt: "NDC講座リリース"
+  },
+  {
     id: "20260831-Librarian-Type",
     date: "2026-08-31",
     title: "「あなたはどの図書館員タイプ？」にタイプ一覧ページを追加しました",

@@ -3,6 +3,15 @@
 window.NEWS_ITEMS = [
   {
     id: "20260908-NDC-Study",
+    date: "2026-10-10",
+    title: "「NDC KARUTA HEROES」の演出を大幅に強化しました！",
+    detail: "「NDC KARUTA HEROES」の演出を大幅に強化しました！ぜひ遊んでみてください！",
+    url: "https://yawatosho.github.io/karuta_heroes/",
+    image: "./assets/news/ndc_update.webp",
+    imageAlt: "「NDC Karuta Heroes」アップデート"
+  },
+  {
+    id: "20260908-NDC-Study",
     date: "2026-09-08",
     title: "「司書さんと覚える日本十進分類」に、NDC講座を追加しました！",
     detail: "「司書さんと覚える日本十進分類」に、NDC講座を追加しました！「NDCってなに？」というところから、司書さんと一緒に少しずつ日本十進分類を覚えていけます。クイズの前のおさらいにも、NDCを勉強してみたい方にもぜひ。",

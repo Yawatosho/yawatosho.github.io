@@ -2,9 +2,18 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
-    id: "20260908-NDC-Study",
+    id: "20261019-Librarian-Type",
+    date: "2026-10-19",
+    title: "「あなたはどの図書館員タイプ？」に相性チェックとシールボードを作りました",
+    detail: "「あなたはどの図書館員タイプ？」に相性チェックとシールボードを作りました。診断結果画面にあなたの図書館員タイプと相性のいい図書館員タイプが表示されます。また、任意のタイプ同士の相性をチェックすることも可能です。また、シールボードでは自分のタイプとその診断結果の納得度をシールで示すことができます。他の人のシールも見ることができます。ぜひ遊んでみてください。",
+    url: "https://yawatosho.github.io/librarian-type/",
+    image: "./assets/news/pair.webp",
+    imageAlt: "「あなたはどの図書館員タイプ？」相性チェックリリース"
+  },
+  {
+    id: "20261010-NDC-karuta",
     date: "2026-10-10",
-    title: "「NDC KARUTA HEROES」の演出を大幅に強化しました！",
+    title: "「NDC KARUTA HEROES」の演出を大幅に強化しました",
     detail: "「NDC KARUTA HEROES」の演出を大幅に強化しました！ぜひ遊んでみてください！",
     url: "https://yawatosho.github.io/karuta_heroes/",
     image: "./assets/news/ndc_update.webp",
@@ -13,7 +22,7 @@ window.NEWS_ITEMS = [
   {
     id: "20260908-NDC-Study",
     date: "2026-09-08",
-    title: "「司書さんと覚える日本十進分類」に、NDC講座を追加しました！",
+    title: "「司書さんと覚える日本十進分類」に、NDC講座を追加しました",
     detail: "「司書さんと覚える日本十進分類」に、NDC講座を追加しました！「NDCってなに？」というところから、司書さんと一緒に少しずつ日本十進分類を覚えていけます。クイズの前のおさらいにも、NDCを勉強してみたい方にもぜひ。",
     url: "https://yawatosho.github.io/study/",
     image: "./assets/news/study-guide.webp",

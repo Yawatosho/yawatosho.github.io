@@ -1,5 +1,17 @@
 const games = [
   {
+	id: "bilib",
+    title: "本ならべパズルゲーム「BibLib（びぶりぶ）」",
+    shortTitle: "BibLib（びぶりぶ）",
+    description: "0から9までの数字が書かれた本を順番に並べて消していくパズルゲームです。",
+    url: "https://yawatosho.github.io/biblib/",
+    image: "https://yawatosho.github.io/biblib/ogp.webp",
+    category: "Shelving / Puzzle",
+    year: "2026",
+    featured: true,
+    archive: false
+  },
+  {
 	id: "librarian-type",
     title: "あなたはどの図書館員タイプ？",
     shortTitle: "あなたはどの図書館員タイプ？",
@@ -34,7 +46,6 @@ const games = [
     category: "Counter / Management",
     filter: "management",
     year: "2026",
-    featured: true,
     archive: false
   },
   {

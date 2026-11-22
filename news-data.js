@@ -2,6 +2,15 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
+    id: "20261122-biblib",
+    date: "2026-11-22",
+    title: "本ならべパズル「BibLib（びぶりぶ）」をリリースしました",
+    detail: "本ならべパズルゲーム「BibLib（びぶりぶ）」をリリースしました！図書館を舞台に、0から9までの数字が書かれた本を順番に並べて消していくパズルゲームです。ゲームには、ストーリー、エンドレス、タイムアタック、対戦の4つのモードを用意しています。ぜひ遊んでみてください。",
+    url: "https://yawatosho.github.io/biblib/",
+    image: "https://yawatosho.github.io/biblib/ogp.webp",
+    imageAlt: "本ならべパズル「BibLib（びぶりぶ）」"
+  },
+  {
     id: "20261019-Librarian-Type",
     date: "2026-10-19",
     title: "「あなたはどの図書館員タイプ？」に相性チェックとシールボードを作りました",

@@ -2,6 +2,16 @@
 // date は YYYY-MM-DD、image は assets/news/ 内の画像パスを指定します。
 window.NEWS_ITEMS = [
   {
+    id: "20261125-ndccolab",
+    date: "2026-11-25",
+    title: "「スーパー日本十進分類カルタ」をNDCコラボに認定いただきました",
+    detail: "「スーパー日本十進分類カルタ」を、日本図書館協会の日本十進分類法100周年記念事業の「NDCコラボ」に認定いただきました！",
+    url: "https://yawatosho.github.io/karuta2/",
+    image: "https://cdn-ak.f.st-hatena.com/images/fotolife/K/Katharine_15/20261125/20261125203048.png",
+    imageAlt: "日本十進分類法100周年事業"
+  },
+
+  {
     id: "20261122-biblib",
     date: "2026-11-22",
     title: "本ならべパズル「BibLib（びぶりぶ）」をリリースしました",
